@@ -1,0 +1,202 @@
+*{
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.back-button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  color: black;      /* Darker green icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 15px
+}
+
+.step-count {
+  border: none;
+  background-color: none;
+  padding: 15px;
+  border-radius: 12px ;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main h2 {
+  color: black;
+  font-size: 1.6em;
+  margin-top: 20px;
+}
+
+main p {
+  color: #777;
+  font-size: 0.8em;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 20px;
+}
+
+.label {
+  font-size: 0.8em;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+input {
+  border: solid rgba(128, 128, 128, 0.189) 2px;
+  border-radius: 15px;
+  padding: 15px 20px;
+  color: black;
+  font-size: 15px;
+}
+
+input:active {
+  border: solid black;
+}
+
+.nin-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: auto;
+}
+
+.nin-header {
+  display: flex;
+  align-items: center;
+}
+
+.nin-logo {
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: green;
+  background-color: rgb(174, 255, 174);      /* Darker green icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 70px;
+  margin-right: 15px
+}
+
+.nin-text {
+  font-weight: bold;
+}
+
+.nin-button {
+  padding: 15px 15px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: rgba(0, 128, 0, 0.772);
+  color: whitesmoke;
+}
+
+.escrow-banner {
+  display: flex;
+  align-items: flex-start; /* Aligns icon to the top of the text block */
+  background-color: #f0f7ff; /* Very light blue */
+  border: 1px solid #ddecff; /* Slightly darker blue border */
+  border-radius: 12px;
+  padding: 16px;
+  margin: 20px 10px;
+  gap: 12px;
+}
+
+.escrow-icon {
+  color: #007bff; /* Brighter blue for the icon */
+  font-size: 18px;
+  margin-top: 2px; /* Slight adjustment to align with the heading */
+}
+
+.escrow-text h3 {
+  margin: 0 0 4px 0;
+  font-size: 15px;
+  color: #007bff; /* Matches the icon */
+  font-weight: 700;
+}
+
+.escrow-text p {
+  margin: 0;
+  font-size: 12px;
+  color: #556987; /* Muted grey-blue for readability */
+  line-height: 1.5;
+}
+
+.consent-container {
+    display: flex;
+    align-items: flex-start; /* Aligns checkbox with the first line of text */
+    gap: px;
+    margin: 20px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 370px; /* Adjust based on your form width */
+  }
+
+  /* Styling the checkbox */
+  .consent-checkbox {
+    width: 35px;
+    height: 20px;
+    margin-top: 3px; /* Fine-tuning alignment with text */
+    cursor: pointer;
+    border: 1.5px solid #d1d5db;
+    border-radius: 4px;
+  }
+
+  /* Styling the text */
+  .consent-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4b5563; /* Dark gray color from image */
+    cursor: pointer;
+  }
+
+  /* Privacy Policy Link */
+  .policy-link {
+    color: #10b981; /* Green color from the UI */
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .policy-link:hover {
+    text-decoration: underline;
+  }
+
+  .create-button {
+  padding: 15px 15px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: rgba(0, 128, 0, 0.772);
+  color: whitesmoke;
+  }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Registration</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/registration.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="index.html"><button class="back-button"><i class="fa-solid fa-arrow-left"></i></button></a>
+
+    <button class="step-count">Step 2 of 2</button>
+  </nav>
+
+  <main>
+    <h2>Vendor Details</h2>
+    <p>Let's set up your store and verify your identity to start receiving secure payments</p>
+
+    <form class="registration-form">
+      <label for="business-name" class="label">Business Name</label>
+      <input type="text" id="business-name" name="business-name" placeholder="e.g Lagos Tech Hub" required>
+
+      <label for="phone-number" class="label">Phone Number</label>
+      <input type="email" id="email" name="email" placeholder="Enter phone number" required>
+
+      <label for="email" class="label">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter email" required>
+
+      <form class="nin-form">
+        <div class="nin-header">
+          <i class="fa-regular fa-id-card nin-logo"></i><span class="nin-text">NIN Verification</span>
+        </div>
+
+        <input type="text" id="nin" name="nin" placeholder="Enter 11-digit NIN" required>
+
+        <button class="nin-button">Verify NIN</button>
+
+      </form>
+    </form> 
+    
+    <div class="escrow-banner">
+      <div class="escrow-icon">
+        <i class="fa-solid fa-lock"></i>
+      </div>
+      <div class="escrow-text">
+        <h3>Secure Data Handling</h3>
+        <p>Your NIN is encrypted and validated directly with NIMC. We do not store your raw identuty data</p>
+      </div>
+    </div>
+
+    <div class="consent-container">
+      <input type="checkbox" id="consent" class="consent-checkbox" required>
+      <label for="consent" class="consent-text">
+        I confirm that the provided information is accurate and I consent to identity verification as per the
+        <a href="#" class="policy-link">Privacy Policy</a>.
+      </label>
+  </div>
+
+  <button class="create-button">Create Account</button>
+  </main>
+</body>
+</html>
