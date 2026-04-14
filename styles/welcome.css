@@ -1,0 +1,224 @@
+*{
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+
+.back-button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  color: black;      /* Darker green icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 15px
+}
+
+.step-count {
+  border: none;
+  background-color: none;
+  padding: 15px;
+  border-radius: 12px ;
+}
+
+.shield {
+  width: 45px;
+  height: 45px;
+  background: #e6f4ea; /* Light green tint */
+  color: #1e7e34;      /* Darker green icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main h1 {
+  color: black;
+  font-size: 1.6em;
+}
+
+main p {
+  color: #777;
+  font-size: 0.8em;
+}
+
+.escrow-banner {
+  display: flex;
+  align-items: flex-start; /* Aligns icon to the top of the text block */
+  background-color: #f0f7ff; /* Very light blue */
+  border: 1px solid #ddecff; /* Slightly darker blue border */
+  border-radius: 12px;
+  padding: 16px;
+  margin: 20px 10px;
+  gap: 12px;
+}
+
+.escrow-icon {
+  color: #007bff; /* Brighter blue for the icon */
+  font-size: 18px;
+  margin-top: 2px; /* Slight adjustment to align with the heading */
+}
+
+.escrow-text h3 {
+  margin: 0 0 4px 0;
+  font-size: 15px;
+  color: #007bff; /* Matches the icon */
+  font-weight: 700;
+}
+
+.escrow-text p {
+  margin: 0;
+  font-size: 12px;
+  color: #556987; /* Muted grey-blue for readability */
+  line-height: 1.5;
+}
+
+/* Container styling */
+.selection-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hide the default radio button */
+.radio-card input[type="radio"] {
+  display: none;
+}
+
+/* The Card Base Style */
+.card-content {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  position: relative;
+}
+
+/* Styling the Icons and Text */
+.icon-box {
+  width: 60px;
+  height: 50px;
+  background: #e6f4ea; /* Light green tint */
+  color: #1e7e34;      /* Darker green icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.icon-box2 {
+  width: 50px;
+  height: 50px;
+  background: #dbf5ff; /* Light green tint */
+  color: #20578e;      /* Darker green icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+
+.icon-box3 {
+  width: 50px;
+  height: 50px;
+  background: #f4f2e6; /* Light green tint */
+  color: #7e5e1e;      /* Darker green icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Hide checkmark by default */
+.check-mark {
+  color: #1e7e34;
+  font-size: 20px;
+  display: none; 
+}
+
+/* --- THE ACTIVE STATE --- */
+
+/* When the radio is checked, change the card border */
+input[type="radio"]:checked + .card-content {
+  border-color: #1e7e34;
+  background-color: #f9fffb;
+}
+
+/* When checked, show the checkmark */
+input[type="radio"]:checked + .card-content .check-mark {
+  display: block;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;justify-content: center;
+  margin: 0;
+  width: 100px;
+  max-width: 320px;
+}
+
+.continue-button{
+  display: block;
+  margin: 20px auto;
+  padding: 15px 100px;
+  border: none;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  font-size: 1.2em;
+}
+
+footer {
+  font-size: 0.6em;
+  margin-top: 30px;
+  color: #777; 
+  text-align: center;
+}
